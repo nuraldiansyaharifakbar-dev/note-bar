@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0F0F0F;
+  color: #E4E4E7; /* teks default terang */
+}
+
+.background-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.notecard {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background: #18181B;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.noteform {
+  background: #18181B;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.noteform input,
+.noteform textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #0F0F0F;
+  color: #E4E4E7;
+  border: 1px solid #3F3F46;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.noteform textarea {
+  resize: none;
+}
+
+.noteform button {
+  background: #8B5CF6; /* aksen ungu */
+  color: #FFFFFF;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.noteform button:hover {
+  background: #A78BFA;
+}
+
+.kategori {
+  margin: 15px 0;
+}
+
+.kategori label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #E4E4E7;
+}
+
+.kategori select {
+  width: 100%;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #3F3F46;
+  background: #0F0F0F;
+  color: #E4E4E7;
+  outline: none;
+}
+
+.kategori select:focus {
+  border-color: #8B5CF6;
+}
+
+.notelist {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.notekard {
+  background: #18181B;
+  color: #E4E4E7;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-header h2 {
+  margin: 0;
+  color: #FACC15; /* aksen kuning terang */
+}
+
+.kategori-v {
+  background: #8B5CF6;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.notekard h3 {
+  margin-bottom: 10px;
+  color: #FACC15;
+}
+
+.notekard p {
+  margin-bottom: 20px;
+  color: #A1A1AA;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+}
+
+.btn button {
+  flex: 1;
+  border: none;
+  padding: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn button:first-child {
+  background: #8B5CF6; /* ganti biru → ungu, konsisten sama aksen utama */
+}
+
+.btn button:last-child {
+  background: #FACC15;
+  color: #0F0F0F; /* teks gelap biar kontras di tombol kuning */
+}
+
+.btn button:first-child:hover {
+  background: #A78BFA;
+}
+
+.btn button:last-child:hover {
+  background: #FDE047;
+}
+
+.modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    width:500px;
+    background:#0F0F0F;
+    padding:25px;
+    border-radius:15px;
+    max-height:80vh;
+    overflow-y:auto;
+}
+
+.modal-content button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+}
+
+.selengkapnya{
+    color:#2563eb;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.selengkapnya:hover{
+    text-decoration:underline;
+}

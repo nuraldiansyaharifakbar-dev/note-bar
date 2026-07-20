@@ -1,0 +1,14 @@
+.sec {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.search {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 360px;
+    margin-top: 20px;
+}
